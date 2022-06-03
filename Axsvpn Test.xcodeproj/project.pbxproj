@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		92F290EAC164FF68641F5F18 /* Pods_Axsvpn_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3C6E4003A9C3B7D1DC87ED5 /* Pods_Axsvpn_Test.framework */; };
 		F580E9DA284AADBA00B3D071 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F580E9D9284AADBA00B3D071 /* AppDelegate.swift */; };
 		F580E9DC284AADBA00B3D071 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F580E9DB284AADBA00B3D071 /* SceneDelegate.swift */; };
 		F580E9DE284AADBA00B3D071 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F580E9DD284AADBA00B3D071 /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		25F9DE30CFFF495B7B527A5A /* Pods-Axsvpn Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Axsvpn Test.debug.xcconfig"; path = "Target Support Files/Pods-Axsvpn Test/Pods-Axsvpn Test.debug.xcconfig"; sourceTree = "<group>"; };
+		B3C6E4003A9C3B7D1DC87ED5 /* Pods_Axsvpn_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Axsvpn_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D23BA606D6BA035BFB0DD8FC /* Pods-Axsvpn Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Axsvpn Test.release.xcconfig"; path = "Target Support Files/Pods-Axsvpn Test/Pods-Axsvpn Test.release.xcconfig"; sourceTree = "<group>"; };
 		F580E9D6284AADBA00B3D071 /* Axsvpn Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Axsvpn Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F580E9D9284AADBA00B3D071 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F580E9DB284AADBA00B3D071 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92F290EAC164FF68641F5F18 /* Pods_Axsvpn_Test.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6D6D78040D549B25A2567787 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B3C6E4003A9C3B7D1DC87ED5 /* Pods_Axsvpn_Test.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		716142EEE941CDABEE768C10 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				25F9DE30CFFF495B7B527A5A /* Pods-Axsvpn Test.debug.xcconfig */,
+				D23BA606D6BA035BFB0DD8FC /* Pods-Axsvpn Test.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F580E9CD284AADBA00B3D071 = {
 			isa = PBXGroup;
 			children = (
 				F580E9D8284AADBA00B3D071 /* Axsvpn Test */,
 				F580E9D7284AADBA00B3D071 /* Products */,
+				716142EEE941CDABEE768C10 /* Pods */,
+				6D6D78040D549B25A2567787 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F580E9EA284AADBB00B3D071 /* Build configuration list for PBXNativeTarget "Axsvpn Test" */;
 			buildPhases = (
+				D67ED2B189D85C8E8C9E26A2 /* [CP] Check Pods Manifest.lock */,
 				F580E9D2284AADBA00B3D071 /* Sources */,
 				F580E9D3284AADBA00B3D071 /* Frameworks */,
 				F580E9D4284AADBA00B3D071 /* Resources */,
+				3D1E811C3A0AB4F162A7EBED /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3D1E811C3A0AB4F162A7EBED /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Axsvpn Test/Pods-Axsvpn Test-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Axsvpn Test/Pods-Axsvpn Test-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Axsvpn Test/Pods-Axsvpn Test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D67ED2B189D85C8E8C9E26A2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Axsvpn Test-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F580E9D2284AADBA00B3D071 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		F580E9EB284AADBB00B3D071 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25F9DE30CFFF495B7B527A5A /* Pods-Axsvpn Test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +380,7 @@
 		};
 		F580E9EC284AADBB00B3D071 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D23BA606D6BA035BFB0DD8FC /* Pods-Axsvpn Test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
