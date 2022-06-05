@@ -8,9 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		92F290EAC164FF68641F5F18 /* Pods_Axsvpn_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3C6E4003A9C3B7D1DC87ED5 /* Pods_Axsvpn_Test.framework */; };
+		F50AFB52284AB8A1000F533E /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50AFB51284AB8A1000F533E /* API.swift */; };
+		F50AFB55284ABAC2000F533E /* MediaLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50AFB54284ABAC2000F533E /* MediaLayer.swift */; };
+		F50AFB58284ABD64000F533E /* MediaLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50AFB57284ABD64000F533E /* MediaLibrary.swift */; };
+		F50AFB5A284AC8DE000F533E /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50AFB59284AC8DE000F533E /* Storage.swift */; };
+		F56A77BF284BD9450025A034 /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56A77BE284BD9450025A034 /* ErrorModel.swift */; };
+		F56A77C1284BDD2B0025A034 /* ProgramVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56A77C0284BDD2B0025A034 /* ProgramVC.swift */; };
+		F56A77C3284BDD460025A034 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56A77C2284BDD460025A034 /* MapVC.swift */; };
+		F56A77C6284BDDE50025A034 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56A77C5284BDDE50025A034 /* Utils.swift */; };
+		F56A77C9284BEA330025A034 /* ProgramCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56A77C8284BEA330025A034 /* ProgramCell.swift */; };
+		F56A77CC284BEF4C0025A034 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56A77CB284BEF4C0025A034 /* Extensions.swift */; };
+		F56A77CE284BFB0B0025A034 /* ProgramDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56A77CD284BFB0B0025A034 /* ProgramDetailVC.swift */; };
+		F56A77D0284C04AA0025A034 /* TrackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56A77CF284C04AA0025A034 /* TrackCell.swift */; };
 		F580E9DA284AADBA00B3D071 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F580E9D9284AADBA00B3D071 /* AppDelegate.swift */; };
 		F580E9DC284AADBA00B3D071 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F580E9DB284AADBA00B3D071 /* SceneDelegate.swift */; };
-		F580E9DE284AADBA00B3D071 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F580E9DD284AADBA00B3D071 /* ViewController.swift */; };
+		F580E9DE284AADBA00B3D071 /* StartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F580E9DD284AADBA00B3D071 /* StartVC.swift */; };
 		F580E9E1284AADBA00B3D071 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F580E9DF284AADBA00B3D071 /* Main.storyboard */; };
 		F580E9E3284AADBB00B3D071 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F580E9E2284AADBB00B3D071 /* Assets.xcassets */; };
 		F580E9E6284AADBB00B3D071 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F580E9E4284AADBB00B3D071 /* LaunchScreen.storyboard */; };
@@ -20,10 +32,22 @@
 		25F9DE30CFFF495B7B527A5A /* Pods-Axsvpn Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Axsvpn Test.debug.xcconfig"; path = "Target Support Files/Pods-Axsvpn Test/Pods-Axsvpn Test.debug.xcconfig"; sourceTree = "<group>"; };
 		B3C6E4003A9C3B7D1DC87ED5 /* Pods_Axsvpn_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Axsvpn_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D23BA606D6BA035BFB0DD8FC /* Pods-Axsvpn Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Axsvpn Test.release.xcconfig"; path = "Target Support Files/Pods-Axsvpn Test/Pods-Axsvpn Test.release.xcconfig"; sourceTree = "<group>"; };
+		F50AFB51284AB8A1000F533E /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		F50AFB54284ABAC2000F533E /* MediaLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaLayer.swift; sourceTree = "<group>"; };
+		F50AFB57284ABD64000F533E /* MediaLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaLibrary.swift; sourceTree = "<group>"; };
+		F50AFB59284AC8DE000F533E /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		F56A77BE284BD9450025A034 /* ErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModel.swift; sourceTree = "<group>"; };
+		F56A77C0284BDD2B0025A034 /* ProgramVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramVC.swift; sourceTree = "<group>"; };
+		F56A77C2284BDD460025A034 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
+		F56A77C5284BDDE50025A034 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		F56A77C8284BEA330025A034 /* ProgramCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramCell.swift; sourceTree = "<group>"; };
+		F56A77CB284BEF4C0025A034 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		F56A77CD284BFB0B0025A034 /* ProgramDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramDetailVC.swift; sourceTree = "<group>"; };
+		F56A77CF284C04AA0025A034 /* TrackCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackCell.swift; sourceTree = "<group>"; };
 		F580E9D6284AADBA00B3D071 /* Axsvpn Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Axsvpn Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F580E9D9284AADBA00B3D071 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F580E9DB284AADBA00B3D071 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F580E9DD284AADBA00B3D071 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F580E9DD284AADBA00B3D071 /* StartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartVC.swift; sourceTree = "<group>"; };
 		F580E9E0284AADBA00B3D071 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F580E9E2284AADBB00B3D071 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F580E9E5284AADBB00B3D071 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,8 +80,64 @@
 				25F9DE30CFFF495B7B527A5A /* Pods-Axsvpn Test.debug.xcconfig */,
 				D23BA606D6BA035BFB0DD8FC /* Pods-Axsvpn Test.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		F50AFB50284AB888000F533E /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				F50AFB56284ABD1A000F533E /* Model */,
+				F50AFB51284AB8A1000F533E /* API.swift */,
+				F50AFB54284ABAC2000F533E /* MediaLayer.swift */,
+				F50AFB59284AC8DE000F533E /* Storage.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		F50AFB53284AB8AE000F533E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F56A77C7284BEA080025A034 /* View */,
+				F580E9DD284AADBA00B3D071 /* StartVC.swift */,
+				F56A77C0284BDD2B0025A034 /* ProgramVC.swift */,
+				F56A77C2284BDD460025A034 /* MapVC.swift */,
+				F56A77CD284BFB0B0025A034 /* ProgramDetailVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F50AFB56284ABD1A000F533E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F50AFB57284ABD64000F533E /* MediaLibrary.swift */,
+				F56A77BE284BD9450025A034 /* ErrorModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F56A77C4284BDDD40025A034 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F56A77C5284BDDE50025A034 /* Utils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		F56A77C7284BEA080025A034 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F56A77C8284BEA330025A034 /* ProgramCell.swift */,
+				F56A77CF284C04AA0025A034 /* TrackCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F56A77CA284BEF300025A034 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F56A77CB284BEF4C0025A034 /* Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		F580E9CD284AADBA00B3D071 = {
@@ -81,9 +161,12 @@
 		F580E9D8284AADBA00B3D071 /* Axsvpn Test */ = {
 			isa = PBXGroup;
 			children = (
+				F56A77CA284BEF300025A034 /* Extensions */,
+				F56A77C4284BDDD40025A034 /* Utils */,
+				F50AFB53284AB8AE000F533E /* Controllers */,
+				F50AFB50284AB888000F533E /* Service */,
 				F580E9D9284AADBA00B3D071 /* AppDelegate.swift */,
 				F580E9DB284AADBA00B3D071 /* SceneDelegate.swift */,
-				F580E9DD284AADBA00B3D071 /* ViewController.swift */,
 				F580E9DF284AADBA00B3D071 /* Main.storyboard */,
 				F580E9E2284AADBB00B3D071 /* Assets.xcassets */,
 				F580E9E4284AADBB00B3D071 /* LaunchScreen.storyboard */,
@@ -207,8 +290,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F580E9DE284AADBA00B3D071 /* ViewController.swift in Sources */,
+				F580E9DE284AADBA00B3D071 /* StartVC.swift in Sources */,
+				F56A77C1284BDD2B0025A034 /* ProgramVC.swift in Sources */,
+				F50AFB5A284AC8DE000F533E /* Storage.swift in Sources */,
 				F580E9DA284AADBA00B3D071 /* AppDelegate.swift in Sources */,
+				F56A77CE284BFB0B0025A034 /* ProgramDetailVC.swift in Sources */,
+				F56A77D0284C04AA0025A034 /* TrackCell.swift in Sources */,
+				F56A77C9284BEA330025A034 /* ProgramCell.swift in Sources */,
+				F50AFB58284ABD64000F533E /* MediaLibrary.swift in Sources */,
+				F50AFB52284AB8A1000F533E /* API.swift in Sources */,
+				F50AFB55284ABAC2000F533E /* MediaLayer.swift in Sources */,
+				F56A77CC284BEF4C0025A034 /* Extensions.swift in Sources */,
+				F56A77C6284BDDE50025A034 /* Utils.swift in Sources */,
+				F56A77C3284BDD460025A034 /* MapVC.swift in Sources */,
+				F56A77BF284BD9450025A034 /* ErrorModel.swift in Sources */,
 				F580E9DC284AADBA00B3D071 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -365,12 +460,13 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "ua.vlad.Axsvpn-Test";
+				PRODUCT_BUNDLE_IDENTIFIER = "ua.vlad.Axsvpn-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -394,12 +490,13 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "ua.vlad.Axsvpn-Test";
+				PRODUCT_BUNDLE_IDENTIFIER = "ua.vlad.Axsvpn-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
