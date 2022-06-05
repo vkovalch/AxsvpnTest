@@ -56,6 +56,7 @@ extension ProgramDetailVC: UITableViewDelegate {
 }
 
 extension ProgramDetailVC: UITableViewDataSource {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.tracks.count
     }
@@ -65,9 +66,25 @@ extension ProgramDetailVC: UITableViewDataSource {
         let item = tracks[indexPath.row]
         cell.url = item.media.mp3.url
         cell.trackTitle.text = item.title
+        cell.delegate = self
         cell.selectionStyle = .none
         return cell
     }
     
+}
+
+extension ProgramDetailVC: TrackCellDelegate {
+    
+    func showWarnig(text: String) {
+        let alert = UIAlertController(
+            title: "Error",
+            message: text,
+            preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "Ok",
+                                      style: UIAlertAction.Style.destructive,
+                                      handler: {(_: UIAlertAction!) in  }
+        ))
+        self.present(alert, animated: true)
+    }
     
 }

@@ -14,12 +14,20 @@ enum MusicState {
     case stop
 }
 
+protocol TrackCellDelegate: AnyObject {
+    func showWarnig(text: String)
+}
+
 class TrackCell: UITableViewCell {
     
+    //MARK: - Outlets
     @IBOutlet weak var trackTitle: UILabel!
     @IBOutlet weak var stateImage: UIImageView!
     @IBOutlet weak var progressBar: UIProgressView!
     
+    
+    //MARK: - Properties
+    weak var delegate: TrackCellDelegate?
     var audioPlayer = AVAudioPlayer()
     let data: Data? = nil
     var timer : Timer? = nil
@@ -28,7 +36,6 @@ class TrackCell: UITableViewCell {
         didSet {
             switch musicState {
             case .play:
-                //                displayLink.isPaused = false
                 stateImage.image = UIImage(systemName: "pause")
                 
                 if data != nil {
@@ -36,11 +43,9 @@ class TrackCell: UITableViewCell {
                 } else {
                     if let _url = URL(string: url) {
                         DispatchQueue.global(qos: .userInitiated).async {
-                            let data = NSData(contentsOf: _url) as! Data
-                            
+                            let data = NSData(contentsOf: _url)! as Data
                             DispatchQueue.main.async {
                                 do {
-                                    
                                     self.audioPlayer = try AVAudioPlayer.init(data: data)
                                     self.audioPlayer.prepareToPlay()
                                     self.audioPlayer.delegate = self
@@ -51,9 +56,6 @@ class TrackCell: UITableViewCell {
                                 }
                             }
                         }
-                        
-                        
-                        
                     }
                 }
                 timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { _ in
@@ -71,8 +73,8 @@ class TrackCell: UITableViewCell {
             }
         }
     }
-    //    lazy var displayLink: CADisplayLink = CADisplayLink(target: self, selector: #selector(updatePlaybackStatus))
     
+    //MARK: - Lifecycle
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -82,18 +84,15 @@ class TrackCell: UITableViewCell {
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-        
-        // Configure the view for the selected state
     }
     
-    @objc
-    func updatePlaybackStatus() {
+    //MARK: - Objc Methods
+    @objc func updatePlaybackStatus() {
         let progress = Float(audioPlayer.currentTime / audioPlayer.duration)
         progressBar.progress = progress
     }
     
     @objc private func playStop() {
-//        audioPlayer.delegate = self
         let currentState: MusicState = musicState
         musicState = currentState == .play ? .pause : .play
     }
@@ -107,6 +106,7 @@ extension TrackCell: AVAudioPlayerDelegate {
     }
     
     func audioPlayerDecodeErrorDidOccur(_ player: AVAudioPlayer, error: Error?) {
-        print(error)
+        print(error?.localizedDescription ?? "Error")
+        delegate?.showWarnig(text: error?.localizedDescription ?? "Error due loading track")
     }
 }

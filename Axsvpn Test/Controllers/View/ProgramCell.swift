@@ -10,21 +10,20 @@ import Kingfisher
 
 class ProgramCell: UITableViewCell {
 
-    
+    //MARK: - Outlets
     @IBOutlet weak var callImage: UIImageView!
     @IBOutlet weak var cellTitle: UILabel!
     
+    //MARK: - Lifecycle
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
     
+    //MARK: - Methods
     func fillData(_ item: Program) {
         callImage.layer.cornerRadius = 8
         callImage.kf.indicatorType = .activity

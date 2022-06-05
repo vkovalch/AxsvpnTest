@@ -7,6 +7,8 @@
 
 import Foundation
 
+
+//MARK: - ErrorModel
 struct ErrorModel: Error {
     let error: String?
     let message: String?
